@@ -1,0 +1,256 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* grid layout */
+
+.grid_layout {
+    display: grid;
+    gap: 24px;
+    min-height: 100vh;
+    width: 1153px;
+    margin: 0 144px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* header */
+
+#logo img {
+    width: 324px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 0px 45px 50.9px -10px rgba(0, 0, 0, 0.04);
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+menu li {
+    font-style: none;
+    list-style: none;
+    margin-left: 24px;
+    transition: all ease 0.3s;
+}
+
+menu li:hover {
+    box-shadow: inset 0 -1px 0 0 rgb(32, 32, 32);
+}
+
+menu a {
+    color: rgb(130, 104, 54);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 424px;
+    object-fit: cover;
+    margin: 64px 0 96px 0;
+}
+
+.hero-img {
+    grid-row: 3;
+    grid-column: 1 / 13;
+}
+
+/* main */
+
+main {
+    grid-area: main;
+}
+
+section {
+    max-width: 756px;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+section span {
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+section h1 {
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.88px;
+    margin-bottom: 32px;
+}
+
+section h2,
+h3,
+h4,
+h5 {
+    font-family: "Open Sans", sans-serif;
+}
+
+#middle_tag {
+    text-align: center;
+}
+
+hr {
+    background-color: red;
+}
+
+section p {
+    color: #202020;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    margin-bottom: 32px;
+}
+
+section img {
+    width: 756px;
+    margin-bottom: 32px;
+}
+
+/* footer */
+
+footer {
+    grid-area: footer;
+    background-color: #484847;
+
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 756px;
+    margin: auto;
+    padding-top: 64px;
+}
+
+.quick_links,
+.location,
+.contact {
+    align-self: start;
+    justify-self: center;
+    grid-row: 1 / 1;
+    height: 100%;
+
+}
+
+.quick_links {
+    grid-column: 1 / 1;
+}
+
+.location {
+    grid-column: 2 / 2;
+
+
+}
+
+.contact {
+    grid-column: 3 / 3;
+}
+
+footer h3 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 32px;
+}
+
+footer p,
+a {
+    color: #c7c7c7;
+    font-family: "Public Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+
+footer p,
+li {
+    margin-bottom: 10px;
+}
+
+footer li {
+    font-style: none;
+    list-style: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer hr {
+    background-color: white;
+    margin-bottom: 32px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+    margin-top: 24px;
+}
+
+footer .fa-brands {
+    color: #c4c4c4;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+footer .fa-brands:hover {
+    color: #ffffff;
+
+
+}
+
+footer .icons {
+    margin-top: 64px;
+}
