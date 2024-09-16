@@ -145,9 +145,7 @@ section img {
 /* footer */
 
 footer {
-    grid-area: footer;
     background-color: #484847;
-
 }
 
 .footer-content {
@@ -350,4 +348,13 @@ footer .icons {
 
 }
 
-@media all and (max-width: 787px) {}
+@media all and (max-width: 570px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 756px;
+        margin: auto;
+        padding-top: 4rem;
+        background-color: rgb(92, 51, 51);
+    }
+}
