@@ -1,0 +1,13 @@
+section hr {
+    width: 256px;
+    margin: 0 auto 32px auto;
+}
+
+section iframe {
+    margin-bottom: 64px;
+}
+
+#location-address {
+    font-size: 16px;
+    font-weight: 600;
+}

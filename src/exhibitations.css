@@ -1,0 +1,11 @@
+h2 {
+    margin-bottom: 2rem;
+    color: #2B4AC5;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all ease 0.2s;
+}
+
+h2:hover {
+    color: #7990ea;
+}
