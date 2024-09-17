@@ -347,6 +347,11 @@ footer .icons {
         justify-items: start;
     }
 
+}
+
+
+
+@media all and (max-width: 602px) {
     footer {
         margin: 0;
     }
