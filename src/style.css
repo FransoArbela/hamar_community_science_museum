@@ -2,7 +2,6 @@
 @import url(contributions.css);
 @import url(exhibitions.css);
 @import url(terms_privacy_policy.css);
-@import url(media_screen.css);
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -99,7 +98,7 @@ menu a {
     object-fit: cover;
     object-position: bottom;
     min-height: 376px;
-    background-image: url('/img/scott.jpg');
+    background-image: url('../img/scott.jpg');
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 1rem;
