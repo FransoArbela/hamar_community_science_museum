@@ -1,6 +1,6 @@
 @import url(contact.css);
 @import url(contribitions.css);
-@import url(exhibitations.css);
+@import url(exhibitions.css);
 @import url(terms_privacy_policy.css);
 @import url(media_screen.css);
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -32,10 +32,17 @@
     margin: auto;
 }
 
+.sidebar {
+    translate: -100%;
+}
+
+.burger-menu input {
+    appearance: none;
+}
+
 /* header */
 
 #logo {
-    background-color: blue;
     display: flex;
     align-items: center;
 }
@@ -45,11 +52,11 @@
 }
 
 header {
-    grid-area: header;
     display: flex;
     justify-content: space-between;
     height: 100px;
     box-shadow: 0px 45px 50.9px -10px rgba(0, 0, 0, 0.04);
+    margin: 0 1rem;
 }
 
 menu {
@@ -85,9 +92,18 @@ menu a {
     max-width: 100%;
 }
 
+
+
 .hero-img {
-    grid-row: 3;
-    grid-column: 1 / 13;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    min-height: 376px;
+    background-image: url('/img/scott.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 1rem;
+    background-size: cover;
 }
 
 /* main */
@@ -138,7 +154,6 @@ section p {
     line-height: 1.5rem;
     letter-spacing: 0.96px;
     margin-bottom: 1rem;
-
 }
 
 section img {
@@ -233,15 +248,16 @@ footer .icons {
     margin-top: 4rem;
 }
 
-.burger-menu {
-    display: none;
-}
-
-.sidebar {
-    display: none;
-}
 
 @media all and (max-width: 1024px) {
+    .hero-img {
+        max-width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        min-height: 291px;
+        background-image: url('/img/scott.jpg');
+        background-repeat: no-repeat;
+    }
 
     menu {
         display: none;
@@ -259,6 +275,7 @@ footer .icons {
         right: 5%;
         height: 3rem;
         position: absolute;
+
     }
 
     .burger-menu::before,
@@ -279,6 +296,7 @@ footer .icons {
         margin: 0;
         outline: none;
         pointer-events: none;
+        translate: 0%;
     }
 
     .burger-menu:has(input:checked)::before {
