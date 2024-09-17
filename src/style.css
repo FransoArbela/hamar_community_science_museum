@@ -23,7 +23,6 @@
     --p-font-language: "Public Sans", sans-serif;
 }
 
-
 /* grid layout */
 
 .grid_layout {
@@ -91,8 +90,6 @@ menu a {
     max-width: 100%;
 }
 
-
-
 .hero-img {
     max-width: 100%;
     object-fit: cover;
@@ -159,7 +156,6 @@ section img {
     max-width: 100%;
     margin-bottom: 2rem;
 }
-
 
 /* footer */
 footer {
