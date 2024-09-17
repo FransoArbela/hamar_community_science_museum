@@ -245,15 +245,6 @@ footer .icons {
 
 
 @media all and (max-width: 1024px) {
-    .hero-img {
-        max-width: 100%;
-        object-fit: cover;
-        object-position: bottom;
-        min-height: 291px;
-        background-image: url('/img/scott.jpg');
-        background-repeat: no-repeat;
-    }
-
     menu {
         display: none;
         width: fit-content;
