@@ -33,7 +33,7 @@
 }
 
 .sidebar {
-    translate: -100%;
+    display: none;
 }
 
 .burger-menu input {
@@ -71,7 +71,6 @@ menu ul {
 }
 
 menu li {
-    font-style: none;
     list-style: none;
     margin-left: 1.5rem;
     transition: all ease 0.3s;
@@ -225,7 +224,6 @@ li {
 }
 
 footer li {
-    font-style: none;
     list-style: none;
 }
 
@@ -293,7 +291,6 @@ footer .icons {
         margin: 0;
         outline: none;
         pointer-events: none;
-        translate: 0%;
     }
 
     .burger-menu:has(input:checked)::before {
@@ -314,6 +311,7 @@ footer .icons {
     }
 
     .sidebar {
+        display: block;
         top: 0;
         left: 0;
         background-color: rgb(255, 255, 255);
