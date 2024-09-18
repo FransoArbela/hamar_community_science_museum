@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -22,6 +23,7 @@
     --title-font-language: "Open Sans", sans-serif;
     --p-font-language: "Public Sans", sans-serif;
 }
+
 
 /* grid layout */
 
@@ -94,12 +96,21 @@ menu a {
     max-width: 100%;
     object-fit: cover;
     object-position: bottom;
-    min-height: 376px;
+    min-height: 276px;
     background-image: url('../img/scott.jpg');
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 1rem;
     background-size: cover;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.hero-quick-btn {
+
+    display: none;
+
 }
 
 /* main */
@@ -243,7 +254,7 @@ footer .icons {
     margin-top: 4rem;
 }
 
-
+/* Big Tablet screens */
 @media all and (max-width: 1024px) {
     menu {
         display: none;
@@ -337,8 +348,45 @@ footer .icons {
         color: #202020;
     }
 
+    .sidebar a:active {
+        background-color: rgb(171, 171, 171);
+    }
+
     .burger-menu.burger-menu:has(input:checked)+.sidebar {
         translate: 0;
+    }
+
+    .hero-quick-btn {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        justify-items: start;
+        width: 30rem;
+    }
+
+    .hero-quick-btn .btn {
+        height: 3.125rem;
+        padding: 1rem;
+        background-color: rgba(77, 77, 77, 0.23);
+        cursor: pointer;
+        width: max-content;
+        border-radius: 3px;
+        border: 1px solid white
+    }
+
+    .hero-quick-btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hero-quick-btn .call-to-action {
+        background-color: rgba(190, 153, 52, 0.73);
+    }
+
+    .hero-quick-btn .btn:active {
+        background-color: rgb(224, 224, 224);
     }
 }
 
@@ -353,11 +401,14 @@ footer .icons {
 
 }
 
-
-
 @media all and (max-width: 602px) {
     footer {
         margin: 0;
+    }
+
+    .hero-quick-btn {
+        flex-direction: column;
+        width: 96%;
     }
 }
 
@@ -366,7 +417,6 @@ footer .icons {
     .footer-content {
         justify-items: start;
         gap: 1rem;
-
     }
 }
 
@@ -384,9 +434,14 @@ footer .icons {
     }
 }
 
+
+/* smalles IPhone screen */
 @media all and (max-width: 320px) {
     #logo img {
         width: 246px;
     }
 
+    .hero-quick-btn {
+        flex-direction: column;
+    }
 }
