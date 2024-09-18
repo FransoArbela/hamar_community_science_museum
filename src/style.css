@@ -22,6 +22,7 @@
     --bottom-p-margin: 1rem;
     --title-font-language: "Open Sans", sans-serif;
     --p-font-language: "Public Sans", sans-serif;
+    --h1-color: #986728;
 }
 
 
@@ -126,7 +127,7 @@ section #h1-span {
 }
 
 section h1 {
-    color: #444;
+    color: var(--h1-color);
     font-family: var(--title-font-language);
     font-size: 3rem;
     font-style: normal;
@@ -165,6 +166,11 @@ section p {
 section img {
     max-width: 100%;
     margin-bottom: 2rem;
+}
+
+#sticker {
+    position: absolute;
+    left: 1px;
 }
 
 /* footer */
@@ -415,6 +421,26 @@ footer .icons {
     .footer-content {
         justify-items: start;
         gap: 1rem;
+    }
+
+    .monthly,
+    #give-once {
+        width: 8.75rem;
+    }
+
+    .one-euro,
+    .ten-euro,
+    .twenty-euro,
+    .thirty-euro,
+    .fourty-euro,
+    .fifty-euro {
+        width: 80px;
+    }
+
+    .amount {
+
+        width: 19.75rem;
+
     }
 }
 
