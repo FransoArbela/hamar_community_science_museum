@@ -25,9 +25,9 @@
     --h1-color: #986728;
 }
 
+/* background color */
 
 /* grid layout */
-
 .grid_layout {
     max-width: 1153px;
     margin: auto;
@@ -42,7 +42,6 @@
 }
 
 /* header */
-
 #logo {
     display: flex;
     align-items: center;
@@ -114,6 +113,12 @@ menu a {
 }
 
 /* main */
+
+main {
+    background: rgb(255, 243, 229);
+    background: linear-gradient(90deg, rgb(253, 242, 211) 0%, rgb(242, 241, 250) 100%);
+}
+
 section {
     margin: 2rem auto;
     max-width: 756px;
@@ -275,7 +280,6 @@ footer .icons {
         right: 5%;
         height: 3rem;
         position: absolute;
-
     }
 
     .burger-menu::before,
@@ -439,7 +443,6 @@ footer .icons {
     .amount {
 
         width: 19.75rem;
-
     }
 }
 
@@ -456,7 +459,6 @@ footer .icons {
         width: 246px;
     }
 }
-
 
 /* smalles IPhone screen */
 @media all and (max-width: 320px) {
